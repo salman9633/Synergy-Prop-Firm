@@ -3,6 +3,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import tradingrl from '@/./assets/Stock-rl.jpeg'
+import visionImg from '@/./assets/vision.jpg'
+import thirdImg from '@/./assets/b.jpg'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
@@ -15,14 +17,14 @@ const slides = [
     buttonColor: 'bg-blue-500 hover:bg-blue-600',
   },
   {
-    image: '/placeholder.svg?height=650&width=1920',
+    image: visionImg,
     title: 'Our Vision',
     description: `To revolutionize futures trading in India by providing a platform where traders can hone their skills, access real-time analytics, and execute trades with confidence, thus creating a new generation of financially empowered traders.`,
     buttonText: 'Learn More',
     buttonColor: 'bg-green-500 hover:bg-green-600',
   },
   {
-    image: '/placeholder.svg?height=650&width=1920',
+    image: thirdImg,
     title: 'Our Mission',
     description: `To create an accessible, transparent, and profitable trading environment where Indian futures traders can explore their full potential by offering cutting-edge technology, a seamless user experience, and continuous educational support. Our mission is to democratize trading for all and help shape the future of financial markets in India.`,
     buttonText: 'Explore Tools',

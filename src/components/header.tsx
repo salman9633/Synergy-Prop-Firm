@@ -32,7 +32,7 @@ export function HeaderComponent() {
               </span>
             </Link>
             <Link 
-              href="/about" 
+              href="/#" 
               className="group flex items-center px-3 py-2 text-sm font-medium text-gray-800 transition duration-300 ease-in-out"
             >
               <Info className="h-5 w-5 mr-1 group-hover:text-green-500" />
@@ -42,7 +42,7 @@ export function HeaderComponent() {
               </span>
             </Link>
             <Link 
-              href="/contact" 
+              href="mailto:synergyincorporationllc@gmail.com" 
               className="group flex items-center px-3 py-2 text-sm font-medium text-gray-800 transition duration-300 ease-in-out"
             >
               <Phone className="h-5 w-5 mr-1 group-hover:text-purple-500" />

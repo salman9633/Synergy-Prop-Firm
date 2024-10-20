@@ -1,38 +1,43 @@
 'use client'
 
 // import { Instagram } from 'lucide-react'
-import { InstagramLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons'
-import { FacebookIcon, LucidePhoneCall, Mail } from 'lucide-react'
+import {FaDiscord, FaFacebook, FaInstagram, FaTelegram, FaTwitter, FaWhatsapp} from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '@/./assets/synergy-logo.png'
+import { BsWhatsapp } from 'react-icons/bs'
 
 export function CustomFooter() {
   const socialLinks = [
     {
-      icon: <InstagramLogoIcon className="w-6 h-6" />,
-      link: '#',
+      icon: <FaInstagram className="w-6 h-6" />,
+      link: 'https://www.instagram.com/synergyincorp/',
       title: 'Instagram'
     },
     {
-      icon: <TwitterLogoIcon className="w-6 h-6" />,
-      link: '#',
+      icon: <FaTwitter className="w-6 h-6" />,
+      link: 'https://x.com/synergyincorp?t=-RF_7JqCqdZCVeq8PubxeA&s=08',
       title: 'Twitter'
     },
     {
-      icon: <FacebookIcon className="w-6 h-6" />,
-      link: '#',
+      icon: <FaFacebook className="w-6 h-6" />,
+      link: 'https://www.facebook.com/profile.php?id=61567126779098&is_tour_completed',
       title: 'Facebook'
     },
     {
-      icon: <Mail className="w-6 h-6" />,
-      link: '#',
-      title: 'Facebook'
+      icon: <BsWhatsapp className="w-6 h-6" />,
+      link: 'https://wa.me/+918078340665',
+      title: 'Whatsapp'
     },
     {
-      icon: <LucidePhoneCall className="w-6 h-6" />,
-      link: '#',
-      title: 'Facebook'
+      icon: <FaTelegram  className="w-6 h-6" />,
+      link: 'https://t.me/synergyincorporation',
+      title: 'Telegram'
+    },
+    {
+      icon: <FaDiscord  className="w-6 h-6" />,
+      link: 'https://discord.gg/AVGJxxqQ',
+      title: 'Discord'
     },
   ]
   return (
@@ -42,7 +47,7 @@ export function CustomFooter() {
           <div className="flex-grow h-px bg-gray-300 max-w-full"></div>
           {
             socialLinks.map((item, index) => (
-              <Link key={index} href={item.link} className="mx-4 text-gray-400 hover:text-gray-600 transition-colors">
+              <Link key={index} href={item.link} className="mx-4 text-gray-400 hover:text-gray-600 hover:scale-125 transition-transform duration-300 ease-out">
                 {item.icon}
                 <span className="sr-only">{item.title}</span>
               </Link>
@@ -67,7 +72,7 @@ export function CustomFooter() {
         </div>
         <div className="flex justify-center space-x-4 mt-4 text-sm">
           {['Legal Stuff', 'Privacy Policy', 'Security', 'Website Accessibility', 'Manage Cookies'].map((item, index) => (
-            <Link key={index} href="#" className="text-gray-600 hover:text-gray-800  hover:underline transition-transform duration-300 ease-out">
+            <Link key={index} href="#" className="text-gray-600 hover:text-gray-800 hover:underline transition-transform duration-300 ease-out">
               {item}
             </Link>
           ))}

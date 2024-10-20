@@ -68,6 +68,10 @@ body {
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   * {
     @apply border-border;

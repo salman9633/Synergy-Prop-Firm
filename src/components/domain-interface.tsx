@@ -3,13 +3,16 @@
 import { Check, Globe, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import shakeHand from '@/./assets/shake.jpg'
 
 export function DomainInterfaceComponent() {
   const [textToShow, setTextToShow] = useState('') // State for typed text
 
   // Text to display in the <p> tag (animated)
   const fullText =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aperiam. Iste sint labore, non error eligendi repudiandae distinctio est nostrum a nemo similique eos perspiciatis, itaque ad nihil ut eaque!'
+    `At Synergy Incorporation, we provide traders with a revolutionary platform to master futures trading in India. Whether you're a beginner or a seasoned expert, our platform combines real-time insights and cutting-edge technology to help you trade smarter.
+Explore tools, strategies, and real-time analytics to elevate your trading journey.`
 
   // Typing effect logic
   useEffect(() => {
@@ -33,26 +36,26 @@ export function DomainInterfaceComponent() {
           <p className="mb-4">Get started with the Funded Account.</p>
           <div className="bg-white rounded-lg p-4 mb-4">
             <div className="flex justify-between items-center mb-2">
-              <span className="font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+              <span className="font-semibold">Access to Virtual Trading Accounts</span>
               <Check className="text-green-500" />
             </div>
-            <div className="text-gray-500 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas labore, molestias debitis, rerum quibusdam </div>
+            <div className="text-gray-500 mb-2">Begin trading with virtual accounts designed to simulate real-world futures trading. Test strategies and hone your skills before committing real capital. </div>
 
           </div>
           <div className="bg-white rounded-lg p-4 mb-4">
             <div className="flex justify-between items-center mb-2">
-              <span className="font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+              <span className="font-semibold">Real-Time Insights & Charts</span>
               <Check className="text-green-500" />
             </div>
-            <div className="text-gray-500 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas labore, molestias debitis, rerum quibusdam </div>
+            <div className="text-gray-500 mb-2">Stay ahead in the market with real-time data, detailed charts, and performance analytics, giving you an edge in the fast-paced Indian futures market.</div>
 
           </div>
           <div className="bg-white rounded-lg p-4 mb-4">
             <div className="flex justify-between items-center mb-2">
-              <span className="font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+              <span className="font-semibold">Market Strategy Insights and Trends</span>
               <Check className="text-green-500" />
             </div>
-            <div className="text-gray-500 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas labore, molestias debitis, rerum quibusdam </div>
+            <div className="text-gray-500 mb-2">Get exclusive access to expert analysis and forecasts. We provide market trend reports and insights to help you identify opportunities and stay ahead in the dynamic world of futures trading.</div>
 
           </div>
 
@@ -79,7 +82,7 @@ export function DomainInterfaceComponent() {
           <div className="bg-gray-100 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="text-2xl font-bold">Lorem Ipsum Title</h3>
+                <h3 className="text-2xl font-bold">Synergy Incorporation - Empowering Traders</h3>
 
                 {/* Animate <p> Tag */}
                 <motion.p
@@ -93,14 +96,16 @@ export function DomainInterfaceComponent() {
                 </motion.p>
               </div>
 
-              <img
+              {/* <img
                 src="/placeholder.svg?height=80&width=80"
                 alt="Img"
                 className="w-20 h-20 object-cover rounded-md"
-              />
+              /> */}
             </div>
             <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors duration-300">
-              Explore
+              <a href="https://wa.me/+918078340665" target='_blank'>
+                Explore
+              </a>
             </button>
           </div>
 
@@ -109,15 +114,15 @@ export function DomainInterfaceComponent() {
           <div className="bg-orange-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="text-2xl font-bold">Lorem Title</h3>
-                <p className="text-sm mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, non. Animi architecto adipisci dolore soluta possimus voluptate vitae similique necessitatibus fuga facilis, provident mollitia, culpa voluptates, ex velit harum repellat?</p>
+                <h3 className="text-2xl font-bold">Connect with Us</h3>
+                <p className="text-sm mb-4">Have questions or looking for business collaboration? Synergy Incorporation is here to assist you. Whether you need help with your trading journey or want to explore business options, we're just a message away. Let’s shape the future of trading together.</p>
               </div>
-              <img src="/placeholder.svg?height=80&width=80" alt="Img" className="w-20 h-20 object-cover rounded-md" />
+              <Image src={shakeHand} alt="Img" width={20} height={20} className="w-20 h-20 object-cover rounded-full shadow-lg" />
             </div>
             <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors duration-300" >
-             <a href="mailto:synergyincorporationllc@gmail.com">
-              Contact Us
-             </a>
+              <a href="mailto:synergyincorporationllc@gmail.com">
+                Contact Us
+              </a>
             </button>
 
           </div>
