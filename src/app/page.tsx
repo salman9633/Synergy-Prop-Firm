@@ -1,6 +1,7 @@
 import { CustomFooter } from "@/components/custom-footer";
 import { DomainInterfaceComponent } from "@/components/domain-interface";
 import { HeaderComponent } from "@/components/header";
+import { LandingPageComponent } from "@/components/landing-page";
 import { TradingCarouselComponent } from "@/components/trading-carousel";
 import Image from "next/image";
 // import Crousel from "@/components/ui/Crousel";
@@ -8,8 +9,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="">
+      <section className="one">
+      <LandingPageComponent/>
+      </section>
       <header className="sticky top-0 z-50">
-        <HeaderComponent />
+        {/* <HeaderComponent /> */}
       </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <TradingCarouselComponent />
@@ -24,7 +28,7 @@ export default function Home() {
 
               </p>
             </div>
-            {/* <Image src={shakeHand} alt="Img" width={20} height={20} className="w-20 h-20 object-cover rounded-full shadow-lg" /> */}
+            
           </div>
           <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors duration-300" >
             <a href="mailto:synergyincorporationllc@gmail.com">

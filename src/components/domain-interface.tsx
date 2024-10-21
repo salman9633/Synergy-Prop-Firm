@@ -31,7 +31,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
     <div className="container mx-auto p-10 font-sans">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Left Section */}
-        <div className="lg:w-2/3 bg-blue-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
+        <div className="glassmorphism lg:w-2/3 bg-blue-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
           <h2 className="text-3xl font-bold mb-4">What You Get Here</h2>
           <p className="mb-4">Get started with the Funded Account.</p>
           <div className="bg-white rounded-lg p-4 mb-4">
