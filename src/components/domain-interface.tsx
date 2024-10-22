@@ -31,10 +31,10 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
     <div className="container mx-auto p-10 font-sans">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Left Section */}
-        <div className="glassmorphism lg:w-2/3 bg-blue-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
+        <div className="glassmorphism lg:w-2/3 bg-blue-50 p-6 !rounded-[10px] shadow-md transition-transform duration-300 hover:scale-[1.02]">
           <h2 className="text-3xl font-bold mb-4">What You Get Here</h2>
           <p className="mb-4">Get started with the Funded Account.</p>
-          <div className="bg-white rounded-lg p-4 mb-4">
+          <div className="bg-fuchsia-50 rounded-xl p-4 mb-4">
             <div className="flex justify-between items-center mb-2">
               <span className="font-semibold">Access to Virtual Trading Accounts</span>
               <Check className="text-green-500" />
@@ -42,7 +42,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
             <div className="text-gray-500 mb-2">Begin trading with virtual accounts designed to simulate real-world futures trading. Test strategies and hone your skills before committing real capital. </div>
 
           </div>
-          <div className="bg-white rounded-lg p-4 mb-4">
+          <div className="bg-fuchsia-50 rounded-xl p-4 mb-4">
             <div className="flex justify-between items-center mb-2">
               <span className="font-semibold">Real-Time Insights & Charts</span>
               <Check className="text-green-500" />
@@ -50,7 +50,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
             <div className="text-gray-500 mb-2">Stay ahead in the market with real-time data, detailed charts, and performance analytics, giving you an edge in the fast-paced Indian futures market.</div>
 
           </div>
-          <div className="bg-white rounded-lg p-4 mb-4">
+          <div className="bg-fuchsia-50 rounded-xl p-4 mb-4">
             <div className="flex justify-between items-center mb-2">
               <span className="font-semibold">Market Strategy Insights and Trends</span>
               <Check className="text-green-500" />
@@ -79,7 +79,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
         {/* Right Section */}
         <div className="lg:w-1/3 space-y-4 pl-3">
           {/* Top Card */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
+          <div className="bg-gray-100 p-6 rounded-xl shadow-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex justify-between items-start mb-4">
               <div>
                 <h3 className="text-2xl font-bold">Synergy Incorporation - Empowering Traders</h3>
@@ -111,7 +111,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
 
 
           {/* Bottom Card */}
-          <div className="bg-orange-50 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
+          <div className="bg-orange-50 p-6 rounded-xl shadow-md transition-transform duration-300 hover:scale-[1.02]">
             <div className="flex justify-between items-start mb-4">
               <div>
                 <h3 className="text-2xl font-bold">Connect with Us</h3>

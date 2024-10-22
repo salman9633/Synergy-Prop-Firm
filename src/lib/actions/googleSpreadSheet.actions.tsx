@@ -12,7 +12,7 @@ let spreadsheetApi = axios.create({
         'Content-Type': 'application/x-www-form-urlencoded',
     },
 })
-type GoogleSpreadSheet = {
+export type GoogleSpreadSheet = {
     name: string
     email: string
 }
@@ -116,12 +116,8 @@ export const joinWaitList = async ({ name, email }: GoogleSpreadSheet) => {
 }
 
 export const checkDisableCookie = async() => {
-    console.log('llllll');
-    
-    console.log(cookies().has('name'));
     if (cookies().has('name') && cookies().has('email')) {
-        console.log(cookies().has('name'));
-        
+
         return true
     } else {
         return false

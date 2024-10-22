@@ -13,14 +13,23 @@ body {
 
   body {
     @apply text-foreground;
-    background-image: url('/Home.svg');
-    /* Path to the image in the public folder */
+    background-image: url('/LandingPage.svg');
+    /* background-image: url('/Home.svg'); */
+    min-width: 100vw;
+    /* Ensure the image covers the entire viewport width */
+    min-height: 100vh;
+    /* Ensure the image covers the entire viewport height */
     background-size: cover;
-    /* Ensure the image covers the entire background */
+    /* The image should cover the section */
     background-position: center;
     /* Center the background image */
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     /* Prevent background repetition */
+    background-attachment: fixed;
+    /* Fix the background image when scrolling */
+    margin: 0;
+    /* Remove any margin that might cause white space */
+    padding: 0;
   }
 }
 
@@ -28,9 +37,35 @@ body {
   display: none;
 }
 
+
+
 .one {
-  background-image: url('/Home.svg');
+  /* background-image: url('/Home.svg'); */
   background-size: cover;
+  min-height: 100vh;
+  /* Ensure the image covers the entire background */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: repeat;
+  /* Prevent background repetition */
+}
+
+.two {
+  /* background-image: url('/Feedback.svg'); */
+  min-width: 100vw;
+  background-size: cover;
+  min-height: 100vh;
+  /* Ensure the image covers the entire background */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: repeat;
+  /* Prevent background repetition */
+}
+
+.three {
+  /* background-image: url('/Feedback.svg'); */
+  background-size: cover;
+  min-height: 100vh;
   /* Ensure the image covers the entire background */
   background-position: center;
   /* Center the background image */
@@ -59,11 +94,19 @@ body {
   }
 }
 
-#glassmorphism {
+.glassmorphism {
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-  border-radius: 10px;
+  box-shadow: 0 3px 20px 0 rgba(219, 109, 255, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.glassmorphism-comingsoon {
+  background: #712974;
+  box-shadow: 0 3px 20px 0 rgba(219, 109, 255, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
