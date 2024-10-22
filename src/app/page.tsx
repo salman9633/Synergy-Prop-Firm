@@ -1,5 +1,6 @@
 import { CustomFooter } from "@/components/custom-footer";
 import { DomainInterfaceComponent } from "@/components/domain-interface";
+import { GlassmorphicCards } from "@/components/glassmorphic-cards";
 import { HeaderComponent } from "@/components/header";
 import { LandingPageComponent } from "@/components/landing-page";
 import { TradingCarouselComponent } from "@/components/trading-carousel";
@@ -16,6 +17,7 @@ export default function Home() {
         {/* <HeaderComponent /> */}
       </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <GlassmorphicCards/>
         <TradingCarouselComponent />
 
         <DomainInterfaceComponent />
