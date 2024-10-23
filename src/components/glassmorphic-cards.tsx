@@ -1,8 +1,8 @@
 'use client'
 
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { InfoIcon, Target, Eye, Key } from "lucide-react"
+import { DialogDemo } from "./inputModal"
 
 export function GlassmorphicCards() {
   return (
@@ -38,9 +38,10 @@ export function GlassmorphicCards() {
               {/* Floating Add Button */}
               <div className="relative min-w-full">
               <CardFooter>
-                <Button variant="secondary" className="w-full  bg-white bg-opacity-20 hover:bg-opacity-30 text-white border-white">
-                  Learn More
-                </Button>
+                <DialogDemo/>
+                
+                  {/* Learn More
+                </Button> */}
               </CardFooter>
                 {/* <div className="flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-lg cursor-pointer">
                   <span className="text-black text-xl font-bold">+</span>

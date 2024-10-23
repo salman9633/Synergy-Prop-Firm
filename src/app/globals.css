@@ -102,6 +102,14 @@ body {
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.glassmorphism-modal {
+  background: rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 3px 20px 0 rgba(219, 109, 255, 0.37); */
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 .glassmorphism-comingsoon {
   background: #712974;
   box-shadow: 0 3px 20px 0 rgba(219, 109, 255, 0.37);

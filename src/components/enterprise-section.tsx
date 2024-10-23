@@ -19,7 +19,7 @@ export function EnterpriseSection() {
             Contact Us
           </Button>
         </div>
-        <div className="lg:w-1/2 relative bg-red-400">
+        <div className="lg:w-1/2 relative">
           <Image
           
             src={buildingSVG}

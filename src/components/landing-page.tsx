@@ -12,6 +12,7 @@ import { Toaster, toast } from 'sonner'
 import { CheckIcon, LucideLoaderCircle, PlusIcon } from 'lucide-react'
 // import { cookies } from 'next/headers'
 import { z } from 'zod';
+import { userSchema } from '@/lib/utils'
 
 export function LandingPageComponent() {
   const [textToShow, setTextToShow] = useState('') // State for typed text
@@ -22,11 +23,7 @@ export function LandingPageComponent() {
   const [isDisabled, setIsDisabled] = useState(false)
   const [loading, setLoading] = useState(false);
 
-  const userSchema = z.object({
-    name: z.string().min(3, { message: "Name must be at least 2 characters long" }).max(50, { message: "Name is too long" }),
-    email: z.string().email({ message: "Invalid email address" }),
-  });
-
+  
   async function validateUserInput(data: GoogleSpreadSheet) {
     try {
       // Parse will throw an error if validation fails
@@ -125,8 +122,8 @@ export function LandingPageComponent() {
         <Image
           src={synLogo}
           alt="Logo"
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           className="mx-auto"
         />
         {/* <p>aldkfna</p> */}
