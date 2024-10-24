@@ -60,7 +60,7 @@ export const joinWaitList = async ({ name, email }: GoogleSpreadSheet) => {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to Synergy Trading</title>
+        <title>Welcome to Synergy Capital Funding</title>
       </head>
       <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
         <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; background-color: #ffffff;">

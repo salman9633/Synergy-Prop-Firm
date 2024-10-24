@@ -15,9 +15,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Synergy Prop Firm",
-  description: "Synergy Prop Firm",
-  icons:{icon:'https://res.cloudinary.com/delmsjmlq/image/upload/v1729373347/6_klwgxa.png'}
+  title: "Synergy Capital Funding",
+  description: "Synergy Capital Funding",
+  icons:{icon:'https://res.cloudinary.com/delmsjmlq/image/upload/v1729785305/SYNERGY_ndsnbn.svg'}
 };
 
 export default function RootLayout({
