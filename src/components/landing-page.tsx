@@ -23,7 +23,7 @@ export function LandingPageComponent() {
   const [isDisabled, setIsDisabled] = useState(false)
   const [loading, setLoading] = useState(false);
 
-  
+
   async function validateUserInput(data: GoogleSpreadSheet) {
     try {
       // Parse will throw an error if validation fails
@@ -42,11 +42,11 @@ export function LandingPageComponent() {
         toast.error(`${validationResult.errors}`)
         return
       }
-      setLoading(true); 
+      setLoading(true);
       await joinWaitList({ name, email })
       setEmail('');
       setName('');
-      setLoading(false); 
+      setLoading(false);
       setIsDisabled(true);
       toast.success(`${name} Added to Waitlist`)  // Disable inputs and button after the function is called
     } catch (error) {
@@ -55,7 +55,7 @@ export function LandingPageComponent() {
   }
 
   // Text to display in the <p> tag (animated)
-  const fullText =`   At Synergy, we provide futures traders with the tools and support they need to trade smarter and grow stronger.Be a part of the movement!`
+  const fullText = `   At Synergy, we provide futures traders with the tools and support they need to trade smarter and grow stronger.Be a part of the movement!`
 
   // Typing effect logic
   useEffect(() => {
@@ -135,7 +135,7 @@ export function LandingPageComponent() {
             STAY TUNED
           </h1>
           <h1>
-            Start You Trading Career With Synegy!
+            EMBARK YOUR FUTURES TRADING WITH SYNERGY!
           </h1>
         </div>
         <motion.p
@@ -149,7 +149,7 @@ export function LandingPageComponent() {
           {/* At Synergy, we provide  <span className="text-[#d73cbe]">futures traders with the tools and support</span> they need to trade smarter and grow stronger. Be a part of the movement! */}
           {textToShow}
         </motion.p>
-   
+
 
         <div className="flex flex-col sm:flex-row gap-4">
           {/* Name Input */}
