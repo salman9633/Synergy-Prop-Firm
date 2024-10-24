@@ -136,7 +136,7 @@ export function LandingPageComponent() {
           </h1>
           <h1 >
             {/* Start You Trading Career With Synegy! */}
-            Ebark Your Futures Trading With Syneggy!
+            Embark Your Futures Trading With Synergy!
           </h1>
         </div>
         <motion.p
