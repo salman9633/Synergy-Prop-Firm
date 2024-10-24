@@ -134,8 +134,9 @@ export function LandingPageComponent() {
           <h1 className='mb-10 !text-4xl'>
             STAY TUNED
           </h1>
-          <h1>
-            EMBARK YOUR FUTURES TRADING WITH SYNERGY!
+          <h1 >
+            {/* Start You Trading Career With Synegy! */}
+            Ebark Your Futures Trading With Syneggy!
           </h1>
         </div>
         <motion.p
