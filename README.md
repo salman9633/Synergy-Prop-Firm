@@ -5,7 +5,7 @@ At Synergy, we provide futures traders with the tools and support they need to t
 Synergy is more than a trading platform; we’re a community of traders dedicated to unlocking financial potential. Our proprietary tools and expertise support traders in their journey to mastering futures and equities markets. Join us in redefining the future of trading success
 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [[https://www.synergycapitalfunding.in/](https://www.synergycapitalfunding.in/)] with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
