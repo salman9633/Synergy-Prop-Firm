@@ -1,17 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+At Synergy, we provide futures traders with the tools and support they need to trade smarter and grow stronger.Be a part of the movement!.
 
-## Getting Started
+## About US
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Synergy is more than a trading platform; we’re a community of traders dedicated to unlocking financial potential. Our proprietary tools and expertise support traders in their journey to mastering futures and equities markets. Join us in redefining the future of trading success
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
