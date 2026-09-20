@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Synergy Capital Funding",
-  description: "Synergy Capital Funding",
+  title: "Synergy Incorporation",
+  description: "Synergy Incorporation",
   icons:{icon:'https://res.cloudinary.com/delmsjmlq/image/upload/v1729785305/SYNERGY_ndsnbn.svg'}
 };
 

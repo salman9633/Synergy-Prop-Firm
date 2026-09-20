@@ -55,7 +55,7 @@ export function LandingPageComponent() {
   }
 
   // Text to display in the <p> tag (animated)
-  const fullText = `   we provide futures traders with the tools and support they need to trade smarter and grow stronger.Be a part of the movement!`
+  const fullText = `   We provide traders with the tools and support they need to trade smarter and grow stronger.Be a part of the movement`
 
   // Typing effect logic
   useEffect(() => {
@@ -134,9 +134,9 @@ export function LandingPageComponent() {
           <h1 className='mb-10 !text-4xl'>
             STAY TUNED
           </h1>
-          <h1 >
+          <h1 className='mb-10'>
             {/* Start You Trading Career With Synegy! */}
-            Embark Your Trading With Synergy!
+            Embark Your Trading With Synergy
           </h1>
         </div>
         <motion.p
