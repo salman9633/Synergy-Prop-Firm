@@ -40,7 +40,7 @@ export function GlassmorphicCards() {
           {
             title: "About Us",
             icon: InfoIcon,
-            description: `Synergy is more than a trading platform; we’re a community of traders dedicated to unlocking financial potential. Our proprietary tools and expertise support traders in their journey to mastering futures and equities markets. Join us in redefining the future of trading success`
+            description: `Synergy is more than a trading platform; we’re a community of traders dedicated to unlocking financial potential. Our proprietary tools and expertise support traders in their journey to master in global markets. Join us in redefining the future of trading success`
           },
           {
             title: "Our Mission",

@@ -1,7 +1,7 @@
 'use client'
 
 // import { Instagram } from 'lucide-react'
-import {FaDiscord, FaFacebook, FaInstagram, FaTelegram, FaTwitter, FaWhatsapp} from 'react-icons/fa'
+import {FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaTelegram, FaTwitter, FaWhatsapp} from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '@/./assets/synergy-logo.png'
@@ -16,6 +16,11 @@ export function CustomFooter() {
     },
     {
       icon: <FaTwitter className="w-6 h-6" />,
+      link: 'https://x.com/synergyincorp?t=-RF_7JqCqdZCVeq8PubxeA&s=08',
+      title: 'Twitter'
+    },
+    {
+      icon: <FaLinkedin className="w-6 h-6" />,
       link: 'https://x.com/synergyincorp?t=-RF_7JqCqdZCVeq8PubxeA&s=08',
       title: 'Twitter'
     },
@@ -70,13 +75,13 @@ export function CustomFooter() {
         <div className="text-center text-sm text-gray-500">
           &copy; {new Date().getFullYear()} Synergy, Inc.
         </div>
-        <div className="flex justify-center space-x-4 mt-4 text-sm">
+        {/* <div className="flex justify-center space-x-4 mt-4 text-sm">
           {['Legal Stuff', 'Privacy Policy', 'Security', 'Website Accessibility', 'Manage Cookies'].map((item, index) => (
             <Link key={index} href="#" className="text-gray-600 hover:text-gray-800 hover:underline transition-transform duration-300 ease-out">
               {item}
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   )

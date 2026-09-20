@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex justify-between items-start mb-4">
           <div>
             <h3 className="text-2xl font-bold">We’re Working on Something Exciting!</h3>
-            <p className="text-sm mb-4">Thank you for visiting Synergy Incorporation. We’re currently upgrading our platform to bring you an even better trading experience. Our team is hard at work building new features, enhancing performance, and ensuring that everything runs smoothly to meet your needs.We know how valuable your time is, and we appreciate your patience as we finalize these improvements. Rest assured, we’ll be back soon with an even more robust and intuitive trading platform that will help you excel in the Indian futures market.</p>
+            <p className="text-sm mb-4">Thank you for visiting Synergy Incorporation. We’re currently upgrading our platform to bring you an even better trading experience. Our team is hard at work building new features, enhancing performance, and ensuring that everything runs smoothly to meet your needs.We know how valuable your time is, and we appreciate your patience as we finalize these improvements. Rest assured, we’ll be back soon with an even more robust and intuitive trading platform that will help you excel in the global market.</p>
             <p className="text-sm mb-4">In the meantime, stay tuned for updates! We’ll notify you as soon as our services are back online and ready to empower your trading journey. Thank you for your understanding and continued support.
 
             </p>

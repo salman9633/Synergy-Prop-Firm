@@ -6,27 +6,30 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import shakeHand from '@/./assets/shake.jpg'
 
+// Defined outside component so it is a stable reference and never causes useEffect to re-run
+const fullText =
+  '  At Synergy Incorporation, we provide traders with a revolutionary platform to master trading globally. ' +
+  "Whether you're a beginner or a seasoned expert, our platform combines real-time insights and cutting-edge technology to help you trade smarter. " +
+  'Explore tools, strategies, and real-time analytics to elevate your trading journey.'
+
 export function DomainInterfaceComponent() {
   const [textToShow, setTextToShow] = useState('') // State for typed text
-
-  // Text to display in the <p> tag (animated)
-  const fullText =
-    `At Synergy Incorporation, we provide traders with a revolutionary platform to master futures trading in India. Whether you're a beginner or a seasoned expert, our platform combines real-time insights and cutting-edge technology to help you trade smarter.
-Explore tools, strategies, and real-time analytics to elevate your trading journey.`
 
   // Typing effect logic
   useEffect(() => {
     let index = 0
+    setTextToShow('') // Reset on every effect run (handles React StrictMode double-invoke)
     const typingInterval = setInterval(() => {
+      if (index >= fullText.length - 1) {
+        clearInterval(typingInterval) // Stop when the text is fully typed
+        return
+      }
       setTextToShow((prev) => prev + fullText[index])
       index++
-      if (index === fullText.length) {
-        clearInterval(typingInterval) // Stop when the text is fully typed
-      }
     }, 50) // Adjust speed here (50ms for each character)
 
     return () => clearInterval(typingInterval)
-  }, [fullText])
+  }, []) // Empty deps — fullText is a module-level constant, never changes
   return (
     <div className="container mx-auto p-10 font-sans">
       <div className="flex flex-col lg:flex-row gap-4">
@@ -39,7 +42,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
               <span className="font-semibold">Access to Virtual Trading Accounts</span>
               <Check className="text-green-500" />
             </div>
-            <div className="text-gray-500 mb-2">Begin trading with virtual accounts designed to simulate real-world futures trading. Test strategies and hone your skills before committing real capital. </div>
+            <div className="text-gray-500 mb-2">Begin trading with virtual accounts. Test strategies and hone your skills before committing real capital. </div>
 
           </div>
           <div className="bg-fuchsia-50 rounded-xl p-4 mb-4">
@@ -47,7 +50,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
               <span className="font-semibold">Real-Time Insights & Charts</span>
               <Check className="text-green-500" />
             </div>
-            <div className="text-gray-500 mb-2">Stay ahead in the market with real-time data, detailed charts, and performance analytics, giving you an edge in the fast-paced Indian futures market.</div>
+            <div className="text-gray-500 mb-2">Stay ahead in the market with real-time data, detailed charts, and performance analytics, giving you an edge in the fast-paced global market.</div>
 
           </div>
           <div className="bg-fuchsia-50 rounded-xl p-4 mb-4">
@@ -55,7 +58,7 @@ Explore tools, strategies, and real-time analytics to elevate your trading journ
               <span className="font-semibold">Market Strategy Insights and Trends</span>
               <Check className="text-green-500" />
             </div>
-            <div className="text-gray-500 mb-2">Get exclusive access to expert analysis and forecasts. We provide market trend reports and insights to help you identify opportunities and stay ahead in the dynamic world of futures trading.</div>
+            <div className="text-gray-500 mb-2">Get exclusive access to expert analysis and forecasts. We provide market trend reports and insights to help you identify opportunities and stay ahead in the dynamic world of trading.</div>
 
           </div>
 
