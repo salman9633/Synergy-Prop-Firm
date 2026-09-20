@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 // import logo from '@/./assets/synergy-logo.png'
-import synLogo from '@/./assets/SYNERGY.svg'
+import synLogo from '@/./assets/Synergy_Logo.jpg-removebg-preview.png'
 import { motion } from 'framer-motion'
 import { ChangeEvent, useEffect, useState } from 'react'
 import { checkDisableCookie, GoogleSpreadSheet, joinWaitList } from '@/lib/actions/googleSpreadSheet.actions'
